@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile Inheritance Model</title>
+</head>
+<body>
+    <div><h3>check response in console</h3></div>
+</body>
+</html>
+<script >
+// Object inheritance
+    let automobile = {
+        seater:"four seater",
+        fuel:"diesel",
+        type:"car",
+        gear:"Manual",
+        safety:"high"
+    }
+    let Sedan =Object.create(automobile);//object.create()
+    Sedan.name="Sedan";
+    Sedan.seat='4';
+    Sedan.autopoilt=true
+    let Safari=Object.create(automobile);
+    Safari.name="Safari";
+    Safari.seat="6";
+    Safari.autopoilt=false
+    let Mahindra=Object.create(automobile);
+    Mahindra.name="Mahindra";
+    console.log(Sedan)
+    console.log(Safari)
+    console.log(Mahindra)
+
+    // function inheritance
+    function auto(name){
+        this.name=name;
+        this.stephy="1 wheel";
+        this.model = "2022";
+        this.seater="4"
+    }
+    var Nissan = new auto("Nissan");
+    var Maruti   =new auto("Maruti alto 800");
+    var Audi =new auto("Audi");
+console.log(Nissan)
+console.log(Maruti)
+console.log(Audi)
+
+
+</script> 
